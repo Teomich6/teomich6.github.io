@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Туризм в заповедник</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/calc.css">
+</head>
+<body>
+  <!-- Заголовок сайта  -->
+  <header class="header">
+    
+    <div class="menu">
+      <a href="index.html" class="menu-link">Главная</a>
+      <a href="photo.html" class="menu-link">Фото</a>
+      <a href="order.html" class="menu-link">Заказ</a>
+      <a href="calc.html" class="menu-link">Расчитать</a>
+    </div>
+
+    <div class="logo">
+      <div class="logo__line-1">Исследуйте</div>
+      <div class="logo__line-2">Настоящий лес</div>
+      <div class="logo__line-3">в нашем первобытном заповеднике всего 999руб.</div>
+    </div>
+
+  </header>
+
+  <!-- Основная часть сайта  -->
+  <main>
+    <div class="main-container">
+      <h1 class="main-title">Расчитать</h1>
+      <table class="calc-table">
+        <tr>
+            <td colspan="4" class="input-field">0</td>
+        </tr>
+        <tr>
+          <td onclick="numberln('7')">7</td>
+          <td onclick="numberln('8')">8</td>
+          <td onclick="numberln('9')">9</td>
+          <td onclick="doAction('-')" class="action">-</td>
+        </tr>
+        <tr>
+          <td onclick="numberln('4')">4</td>
+          <td onclick="numberln('5')">5</td>
+          <td onclick="numberln('6')">6</td>
+          <td onclick="doAction('*')" class="action">*</td>
+        </tr>
+        <tr>
+          <td onclick="numberln('1')">1</td>
+          <td onclick="numberln('2')">2</td>
+          <td onclick="numberln('3')">3</td>
+          <td onclick="doAction('+')" class="action">+</td>
+        </tr>
+        <tr>
+          <td onclick="numberln('0')">0</td>
+          <td class="action" onclick="clearln()">C</td>
+          <td onclick='calculate()' class="action">=</td>
+          <td onclick="doAction('/')" class="action">/</td>
+        </tr>
+    </table>
+    </div>
+  </main>
+
+  <!-- Подвал сайта  -->
+  <footer class="footer">
+    <button class="footer-btn">Обратная связь</button>
+    <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corporis harum, illo ea, voluptatum aspernatur necessitatibus nihil sed laboriosam mollitia voluptatem, iste error ipsa. Ducimus ratione illum est obcaecati ipsum atque minima fugit, quibusdam possimus, explicabo quaerat fugiat velit itaque.</p>
+  </footer>
+
+  <script src="./js/calc.js"></script>
+  <button class="footer-btn" onclick="location.href='order.html';">Обратная связь</button>
+</body>
+</html>
